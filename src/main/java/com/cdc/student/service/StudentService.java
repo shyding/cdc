@@ -2,8 +2,10 @@ package com.cdc.student.service;
 
 import com.cdc.student.model.Student;
 import com.cdc.student.repository.StudentRepository;
-import com.cdc.student.utils.Operation;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.debezium.data.Envelope.Operation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
